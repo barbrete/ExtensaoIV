@@ -7,63 +7,116 @@
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="icon" href="imagens/icone.png" type="image/x-icon">
     <title>PDFácil</title>
 </head>
 <body>
     <header>
         <i class="fa-solid fa-file-pdf" id="nav_logo">PDFacil</i>
-            <p>Transforme suas ideias em PDFs com um clique!</p>
+
+        <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <p id="slogan">Transforme suas ideias em PDFs com um clique!</p>
+        
+        <div class="image-container">
+            <img src="imagens/banner.png" id="capa">
+            <textarea class="text-overlay"></textarea>
+            <div class="linha_vertical"></div>
+        </div>
+
         <nav id="navbar">
             <ul id="nav_list">
                 <li class="nav_item">
                     <a href="#home">Inicio</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#pdf">PDF's</a>
+                    <a href="#pdfs">PDF's</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#devs">Desenvolvedores</a>
+                    <a href="#fotos">Desenvolvedores</a>
                 </li>
                 <li class="nav_item">
                     <a href="#feedback">FeedBacks</a>
                 </li>
             </ul>
-
-            <button class="btn_default">
-                Insira o tema
-            </button>
-
-            <button id="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
         </nav>
 
-
-    <div id="mobile_menu">
-        <ul id="mobile_nav_list">
-            <li class="nav_item active">
-                <a href="#home">Inicio</a>
-            </li>
-            <li class="nav_item">
-                <a href="#pdf">PDF's</a>
-            </li>
-            <li class="nav_item">
-                <a href="#devs">Desenvolvedores</a>
-            </li>
-            <li class="nav_item">
-                <a href="#feedback">FeedBacks</a>
-            </li>
-        </ul>
-
-        <button class="btn_default">
-            Insira o tema
-        </button>
-    </div>
-
-    <!-- <img src="banner.jpg"> -->
-
     </header>
+
+    <main id="content">
+        <h1 class="titulo" id="pdfs">Escolha um Template</h1>
+
+        <section id="pdf">
+
+            <figure>
+                <img src="imagens/abnt.png" class="imagem_pdf" alt="" id="pdf1">
+                <p class="nome">Normas ABNT</p>
+            </figure>
+            
+            <figure>
+                <img src="imagens/simples.png" class="imagem_pdf" alt="" id="pdf1">
+                <p class="nome">Modelos Simples</p>
+            </figure>
+                
+            <figure>
+                <img src="imagens/detalhado.png" class="imagem_pdf" alt="" id="pdf1">
+                <p class="nome">Modelo Detalhado</p>
+            </figure>
+        </section>
+
+        <section id="gerando">
+            <h1 class="titulo">Gerando...</h1>
+            <img src="imagens/pdf.png" id="gerando" alt="">
+            <br>
+            <button class="botao">
+                Download
+            </button>
+        </section>
+            
+        <section id="fotos">
+            <h1 class="titulo">Desenvolvedores</h1>
+            <figure class="esquerda">
+                <img src="imagens/arthur.jpg" alt="" class="perfil">
+                <p class="nome">Arthur da Silva Ramos</p>
+                <p class="funcao">Scrum Master</p>
+            </figure>
+
+            <figure class="direita">
+                <img src="imagens/barbara.jpg" alt="" class="perfil">
+                <p class="nome">Bárbara Gianvechio Cobo</p>
+                <p class="funcao">Dev Front-End</p>
+            </figure>
+            
+            <figure class="esquerda">
+                <img src="imagens/luan.jpg" alt="" class="perfil">
+                <p class="nome">Luan Flôr Gustavo</p>
+                <p class="funcao">Dev Back-End</p>
+            </figure>
+            
+            <figure class="direita">
+                <img src="imagens/patrick.jpg" alt="" class="perfil">
+                <p class="nome">Patrick Machado Cardoso</p>
+                <p class="funcao">Engenheiro de Prompt</p>
+            </figure>
+
+        </section>
+
+        <section id="feedback">
+            <h1 class="titulo">FeedBacks</h1>
+            <textarea id="comment" name="comment" rows="4" required placeholder="No que podemos melhorar?"></textarea>
+            <button type="submit" class="botao">Enviar</button>
+ 
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2024 Todos os direitos reservados</p>
+    </footer>
 
     <script src="src/javascript/script.js"></script>
 </body>
