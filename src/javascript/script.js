@@ -5,3 +5,18 @@ $(document).ready(function(){
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.getElementById("navbar");
+    
+    const capa = document.getElementById("pdf");
+
+    const capaHeight = capa.offsetHeight;
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > capaHeight) {
+            navbar.classList.add("fixed");
+        } else {
+            navbar.classList.remove("fixed");
+        }
+    });
+});

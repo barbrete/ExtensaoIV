@@ -1,0 +1,26 @@
+figure {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.perfil {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nome {
+    margin-top: 10px;
+}
+
+.funcao {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 30px;
+}

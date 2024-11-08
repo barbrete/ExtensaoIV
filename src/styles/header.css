@@ -6,6 +6,17 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 1000;
+
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Mantém a navbar acima dos outros elementos */
+    background-color: #F5F5F5;    
+    border-bottom: 1px solid #b4b4b4;
 }
 
 #nav_logo{
@@ -83,15 +94,22 @@ header{
 }
 
 .text-overlay {
-    position: absolute;              /* Posicionamento absoluto dentro do contêiner */
-    top: 35%;                        /* Posiciona a 50% da altura do contêiner */
-    left: 50%;                       /* Posiciona a 50% da largura do contêiner */
-    transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
-    width: 80%;                      /* Largura da caixa de texto */
-    border-bottom: #fff;
-    border-radius: 5px;              /* Bordas arredondadas */
-    font-size: 16px;                 /* Tamanho do texto */
-    resize: none;                    /* Desativa o redimensionamento */
+    position: absolute;              
+    top: 30%;                        
+    left: 50%;                       
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    height: 60px;
+    border-radius: 0;     
+    resize: none;   
+    border: none;             
+    border-bottom: 2px solid white; 
+    color: white;
+    background-color: transparent;
+    outline: none; /* Remove o contorno ao focar */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }
 
 

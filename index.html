@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/pdf.css">
+    <link rel="stylesheet" href="src/styles/devs.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <link rel="icon" href="imagens/icone.png" type="image/x-icon">
@@ -30,7 +32,7 @@
         <nav id="navbar">
             <ul id="nav_list">
                 <li class="nav_item">
-                    <a href="#home">Inicio</a>
+                    <a href="#nav_logo">Inicio</a>
                 </li>
                 <li class="nav_item">
                     <a href="#pdfs">PDF's</a>
@@ -50,22 +52,28 @@
         <h1 class="titulo" id="pdfs">Escolha um Template</h1>
 
         <section id="pdf">
-
             <figure>
-                <img src="imagens/abnt.png" class="imagem_pdf" alt="" id="pdf1">
+                <button class="imagem_pdf"> 
+                    <img src="imagens/abnt.png" alt="Imagem representando normas ABNT" class="imagem-pdf">
+                </button>
                 <p class="nome">Normas ABNT</p>
             </figure>
             
             <figure>
-                <img src="imagens/simples.png" class="imagem_pdf" alt="" id="pdf1">
+                <button class="imagem_pdf"> 
+                    <img src="imagens/simples.png" alt="Imagem representando modelos simples" class="imagem-pdf">
+                </button>
                 <p class="nome">Modelos Simples</p>
             </figure>
-                
+                    
             <figure>
-                <img src="imagens/detalhado.png" class="imagem_pdf" alt="" id="pdf1">
+                <button class="imagem_pdf"> 
+                    <img src="imagens/detalhado.png" alt="Imagem representando modelo detalhado" class="imagem-pdf">
+                </button>
                 <p class="nome">Modelo Detalhado</p>
             </figure>
         </section>
+        
 
         <section id="gerando">
             <h1 class="titulo">Gerando...</h1>
@@ -78,25 +86,25 @@
             
         <section id="fotos">
             <h1 class="titulo">Desenvolvedores</h1>
-            <figure class="esquerda">
+            <figure>
                 <img src="imagens/arthur.jpg" alt="" class="perfil">
                 <p class="nome">Arthur da Silva Ramos</p>
                 <p class="funcao">Scrum Master</p>
             </figure>
 
-            <figure class="direita">
+            <figure>
                 <img src="imagens/barbara.jpg" alt="" class="perfil">
                 <p class="nome">Bárbara Gianvechio Cobo</p>
                 <p class="funcao">Dev Front-End</p>
             </figure>
             
-            <figure class="esquerda">
+            <figure>
                 <img src="imagens/luan.jpg" alt="" class="perfil">
                 <p class="nome">Luan Flôr Gustavo</p>
                 <p class="funcao">Dev Back-End</p>
             </figure>
             
-            <figure class="direita">
+            <figure>
                 <img src="imagens/patrick.jpg" alt="" class="perfil">
                 <p class="nome">Patrick Machado Cardoso</p>
                 <p class="funcao">Engenheiro de Prompt</p>

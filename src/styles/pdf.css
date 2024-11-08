@@ -1,0 +1,25 @@
+/* PDF'S */
+#pdf {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+#pdf figure{
+    text-align: center;
+    margin: 10px;
+}
+
+.imagem_pdf {
+    border: none;                 
+    background-color: transparent; 
+    cursor: pointer;
+    padding: 10px;
+}
+
+.imagem-pdf {
+    width: 300px;                  
+    height: 450px;                  
+    
+}
